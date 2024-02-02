@@ -1,41 +1,75 @@
-body, html {
+/* Basic reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #333;
+    background: #333;
     color: #fff;
-    padding: 20px;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+}
+
+header h1 {
     text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin-right: 10px;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: #fff;
 }
 
 main {
+    padding-top: 20px;
+}
+
+section {
+    margin-bottom: 20px;
     padding: 20px;
+    background: #fff;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
     text-align: center;
-    position: fixed;
-    bottom: 0;
+    margin-top: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form button {
+    display: block;
     width: 100%;
     padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0779e4;
 }
