@@ -8,18 +8,20 @@
 </head>
 <body>
     <header>
-        <h1>Join Our Team</h1>
+        <h1>Get Pump Gym</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="branchesPlaces.html">Branches</a></li>
-                <li><a href="subscription.html">Subscription</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="payment.html">Payment</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="branchesPlaces.html">Branches</a>
+            <a href="subscription.html">Subscription</a>
+            <a href="jobs.html" class="active">Jobs</a>
+            <a href="payment.html">Payment</a>
         </nav>
     </header>
     <main>
+        <section>
+            <h2>Join Our Team</h2>
+            <p>We are looking for passionate and talented individuals to join our gym staff. If you are interested in any of the following positions, please fill out the form below and submit your application.</p>
+        </section>
         <form action="submitJobApplication()" method="post">
             <label for="jobTitle">Job Title:</label>
             <select id="jobTitle" name="jobTitle">
@@ -33,10 +35,11 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <button type="submit">Submit Application</button>
+            <p>We will review your application and contact you if you are selected for an interview. Thank you for your interest in working with us.</p>
         </form>
     </main>
     <footer>
-        <p>&copy; 2024 Get Pump Gym</p>
+        <p>© 2024 Get Pump Gym</p>
     </footer>
     <script src="script.js"></script>
 </body>
