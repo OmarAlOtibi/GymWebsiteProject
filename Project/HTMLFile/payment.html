@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | Get Pump Gym</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Subscription Payment</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="branchesPlaces.html">Branches</a></li>
+                <li><a href="subscription.html">Subscription</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="payment.html">Payment</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="submitPayment()" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <label for="subscriptionType">Subscription Type:</label>
+            <select id="subscriptionType" name="subscriptionType">
+                <option value="3months">3 Months</option>
+                <option value="6months">6 Months</option>
+                <option value="12months">12 Months</option>
+            </select>
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Get Pump Gym</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
