@@ -8,37 +8,47 @@
 </head>
 <body>
     <header>
-        <h1>Subscription Payment</h1>
+        
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="branchesPlaces.html">Branches</a></li>
-                <li><a href="subscription.html">Subscription</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="payment.html">Payment</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="branchesPlaces.html">Branches</a>
+            <a href="subscription.html">Subscription</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="payment.html" class="active">Payment</a>
         </nav>
     </header>
     <main>
+        <section>
+            <h2>Complete Your Payment</h2>
+            <p>Please fill out the form below with your subscription and payment details.</p>
+        </section>
         <form action="submitPayment()" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="sex">Sex:</label>
             <select id="sex" name="sex">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
             </select>
             <label for="subscriptionType">Subscription Type:</label>
             <select id="subscriptionType" name="subscriptionType">
-                <option value="3months">3 Months</option>
-                <option value="6months">6 Months</option>
-                <option value="12months">12 Months</option>
+                <option value="3months">3 months</option>
+                <option value="6months">6 months</option>
+                <option value="12months">12 months</option>
             </select>
-            <button type="submit">Proceed to Payment</button>
+            <label for="cardNumber">Card Number:</label>
+            <input type="number" id="cardNumber" name="cardNumber" required>
+            <label for="cardExpiry">Card Expiry:</label>
+            <input type="date" id="cardExpiry" name="cardExpiry" required>
+            <label for="cardCVV">Card CVV:</label>
+            <input type="number" id="cardCVV" name="cardCVV" required>
+            <button type="submit">Pay Now</button>
+            <p>Your payment is secure and encrypted. We do not store your card information.</p>
         </form>
     </main>
     <footer>
-        <p>&copy; 2024 Get Pump Gym</p>
+        <p>© 2024 Get Pump Gym</p>
     </footer>
     <script src="script.js"></script>
 </body>
