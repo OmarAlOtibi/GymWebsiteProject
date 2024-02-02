@@ -1,75 +1,227 @@
-/* Basic reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Style the body element */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
 }
 
+/* Style the header element */
 header {
-    background: #333;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #0779e4 3px solid;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-header h1 {
-    text-align: center;
+/* Style the navigation bar */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #555;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+/* Style the navigation links */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+/* Style the active link */
+nav a.active {
+  border-bottom: 3px solid white;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
+/* Style the main content */
 main {
-    padding-top: 20px;
+  padding: 20px;
 }
 
-section {
-    margin-bottom: 20px;
-    padding: 20px;
-    background: #fff;
+/* Style the headings */
+h1, h2, h3 {
+  color: #333;
 }
 
+/* Style the paragraphs */
+p {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Style the images */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the features section */
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+/* Style the feature cards */
+.feature-card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the feature icons */
+.feature-icon {
+  font-size: 48px;
+  color: #333;
+}
+
+/* Style the feature titles */
+.feature-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Style the feature descriptions */
+.feature-desc {
+  margin-top: 10px;
+}
+
+/* Style the subscription section */
+.subscription {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the subscription title */
+.subscription-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Style the subscription subtitle */
+.subscription-subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Style the subscription plans */
+.subscription-plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Style the subscription plan cards */
+.subscription-plan {
+  background-color: white;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+}
+
+/* Style the subscription plan title */
+.plan-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Style the subscription plan price */
+.plan-price {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Style the subscription plan features */
+.plan-features {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+}
+
+/* Style the subscription plan feature items */
+.plan-feature {
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Style the subscription plan button */
+.plan-button {
+  display: block;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px auto;
+  width: 200px;
+  text-align: center;
+}
+
+/* Style the footer element */
 footer {
-    text-align: center;
-    margin-top: 20px;
+  background-color: #555;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-form input[type="text"],
-form input[type="email"],
-form select,
+/* Style the form elements */
+form {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Style the form labels */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Style the form inputs */
+form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Style the form select */
+form select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Style the form button */
 form button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+  display: block;
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px auto;
+  width: 200px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
 }
 
-form button {
-    background: #333;
-    color: #fff;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #0779e4;
+/* Style the form message */
+form p {
+  color: #666;
+  text-align: center;
 }
